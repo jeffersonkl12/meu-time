@@ -1,0 +1,33 @@
+/* layout */
+
+.flex{
+    display: flex;
+}
+
+.fd-c{
+    flex-direction: column;
+}
+
+.f-jc-c{
+    justify-content: center;
+}
+
+.f-jc-sa{
+    justify-content: space-around;
+}
+
+.f-jc-sb{
+    justify-content: space-between;
+}
+
+.f-jc-se{
+    justify-content: space-evenly;
+}
+
+.f-ai-c{
+  align-items: center;  
+}
+
+.f-ai-fe{
+    align-items: flex-end;
+}
