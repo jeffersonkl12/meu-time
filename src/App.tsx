@@ -1,21 +1,17 @@
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import Login from './pages/login';
+import { RouterProvider } from "react-router-dom";
+import Routes from "./Routes";
+import React from "react";
+import AuthProvider from "./AuthProvider";
 import "./App.css";
 import "./pages/util.css";
-import '@csstools/normalize.css';
+import "@csstools/normalize.css";
 
-
-
-const router = createBrowserRouter([
-  {
-    path: "/meu-time",
-    element: <Login/>,
-
-  }
-])
-
-function App() {
-  return (<RouterProvider router={router}/>);
-}
+const App: React.FC = () => {
+  return (
+    <AuthProvider>
+      <RouterProvider router={Routes} />
+    </AuthProvider>
+  );
+};
 
 export default App;

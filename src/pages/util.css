@@ -1,33 +1,46 @@
 /* layout */
 
-.flex{
-    display: flex;
+.flex {
+  display: flex;
 }
 
-.fd-c{
-    flex-direction: column;
+.fd-c {
+  flex-direction: column;
 }
 
-.f-jc-c{
-    justify-content: center;
+.f-jc-c {
+  justify-content: center;
 }
 
-.f-jc-sa{
-    justify-content: space-around;
+.f-jc-sa {
+  justify-content: space-around;
 }
 
-.f-jc-sb{
-    justify-content: space-between;
+.f-jc-sb {
+  justify-content: space-between;
 }
 
-.f-jc-se{
-    justify-content: space-evenly;
+.f-jc-se {
+  justify-content: space-evenly;
 }
 
-.f-ai-c{
-  align-items: center;  
+.f-ai-c {
+  align-items: center;
 }
 
-.f-ai-fe{
-    align-items: flex-end;
+.f-ai-fe {
+  align-items: flex-end;
+}
+
+/*  font style */
+
+.titulo {
+  font-size: 25px;
+}
+
+/* color */
+
+:root {
+  --gray-primary: #3d3d3d;
+  --orange-primary: #f79802;
 }

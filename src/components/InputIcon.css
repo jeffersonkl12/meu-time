@@ -1,0 +1,41 @@
+.inputIcon__container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  padding: 5px 10px;
+
+  box-shadow: 0 0 1px 1px var(--gray-primary);
+  border-radius: 3px;
+}
+
+.inputIcon__content {
+  width: 100%;
+  height: 15px;
+  padding: 5px;
+
+  border: none;
+  outline: none;
+
+  font-size: 18px;
+}
+
+.inputIcon__icon {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  font-size: 25px;
+  color: var(--gray-primary);
+  position: relative;
+}
+
+.inputIcon__icon span {
+  display: inline-block;
+  width: 1px;
+  height: 20px;
+
+  margin-left: 5px;
+
+  background-color: var(--gray-primary);
+}

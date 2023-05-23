@@ -2,13 +2,23 @@ import { type } from "os";
 import "./ButtonSimple.css";
 
 type ButtonSimpleProps = {
-    
+    id?: string;
+    classes?: string;
+    type?: string;
+    value?: string;
+    style?: React.CSSProperties;
 }
 
 
-const ButtonSimple = () =>{
+const ButtonSimple = ({id,classes,type,value,style}: ButtonSimpleProps) =>{
 
-    return <input className="buttonSimple" type="submit"/> 
-
+    return <input 
+    id={id} 
+    className={`buttonSimple ${classes}`} 
+    type="submit"
+    value={value}
+    style={style}/> 
 
 }
+
+export default ButtonSimple;
